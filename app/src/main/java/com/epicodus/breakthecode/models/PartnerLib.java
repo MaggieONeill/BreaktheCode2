@@ -49,7 +49,7 @@ public class PartnerLib {
         if(index == mPartners.size() -1){
             return mPartners.get(0);
         } else {
-            return mPartners.get(index +1);
+            return mPartners.get(index + 1);
         }
     }
 
