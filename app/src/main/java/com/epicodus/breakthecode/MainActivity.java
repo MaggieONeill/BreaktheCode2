@@ -30,9 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, NonProfitActivity.class);
                 startActivity(intent);
             }
+        });
 
-
-
+        mEnrollButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, EnrollActivity.class);
+                startActivity(intent);
+            }
         });
     }
 
