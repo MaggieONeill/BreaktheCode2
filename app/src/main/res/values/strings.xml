@@ -11,4 +11,5 @@
     for women choosing careers in programming. </string>
     <string name="title_activity_non_profit">NonProfitActivity</string>
     <string name="title_activity_enroll">EnrollActivity</string>
+    <string name="title_activity_sponsors">SponsorsActivity</string>
 </resources>

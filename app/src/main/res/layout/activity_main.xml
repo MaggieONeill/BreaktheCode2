@@ -36,7 +36,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Sponsors"
         android:id="@+id/sponsorsButton"
         android:layout_above="@+id/nonProfitButton"
         android:layout_centerHorizontal="true"
