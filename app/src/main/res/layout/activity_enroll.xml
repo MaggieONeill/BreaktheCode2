@@ -9,8 +9,31 @@
                 tools:context="com.epicodus.breakthecode.ui.EnrollActivity">
 
     <TextView
-        android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enrollment Information"
+        android:id="@+id/enrollmentInfoLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name and email below and we will send you more information about enrollment."
+        android:id="@+id/textView"
+        android:layout_below="@+id/enrollmentInfoLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/enrollmentInfoLabel"
+        android:layout_alignStart="@+id/enrollmentInfoLabel"
+        android:hint="Name"/>
 </RelativeLayout>
