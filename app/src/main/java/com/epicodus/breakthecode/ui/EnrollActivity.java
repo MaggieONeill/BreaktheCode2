@@ -4,15 +4,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.epicodus.breakthecode.R;
 
 public class EnrollActivity extends AppCompatActivity {
 
+    private EditText mEmailText;
+    private EditText mNameText;
+    private Button mSubmitButton;
+    private TextView mThankyouText;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enroll);
+
+        mEmailText = (EditText)
     }
 
 
