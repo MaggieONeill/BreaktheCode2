@@ -30,8 +30,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="App Camp For Girls is a place where girls can put their creative powers to work, designing and building apps, while learning more about the business of software and being inspired by women mentors in the field.    "
-        android:id="@+id/textView"
+        android:id="@+id/descriptionLabel"
         android:layout_below="@+id/nameLabel"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Partner"
+        android:id="@+id/nextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/nameLabel"
+        android:layout_alignStart="@+id/nameLabel"/>
 </RelativeLayout>

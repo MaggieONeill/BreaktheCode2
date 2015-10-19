@@ -16,6 +16,10 @@ public class PartnerLib {
 
     }
 
+    public ArrayList<Partner> getPartners() {
+        return mPartners;
+    }
+
     private void setNonProfitPartners() {
         mPartners = new ArrayList<>();
 
@@ -24,7 +28,7 @@ public class PartnerLib {
                 "App Camp For Girls is a place where girls can put their creative powers to work, designing and building apps, while learning more about the business of software and being inspired by women mentors in the field. ",
                 "http://appcamp4girls.com/",
                 R.drawable.app_camp_for_girls
-                ));
+        ));
 
         mPartners.add(new Partner(
                 "ChickTech",
@@ -39,8 +43,15 @@ public class PartnerLib {
                 "https://www.girldevelopit.com/",
                 R.drawable.girl_develop_it
         ));
-
-
     }
+    public Partner nextPartner(Partner currentPartner){
+        int index = mPartners.indexOf(currentPartner);
+        if(index == mPartners.size() -1){
+            return mPartners.get(0);
+        } else {
+            return mPartners.get(index +1);
+        }
+    }
+
 
 }
