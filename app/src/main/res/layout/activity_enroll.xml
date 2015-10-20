@@ -6,7 +6,8 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.epicodus.breakthecode.ui.EnrollActivity">
+                tools:context="com.epicodus.breakthecode.ui.EnrollActivity"
+                android:id="@+id/relativeLayout">
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,9 +23,10 @@
         android:layout_height="wrap_content"
         android:text="Enter your name and email below and we will send you more information about enrollment."
         android:id="@+id/textView"
+        android:layout_marginTop="54dp"
         android:layout_below="@+id/enrollmentInfoLabel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
     <EditText
         android:layout_width="wrap_content"
