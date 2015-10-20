@@ -12,4 +12,5 @@
     <string name="title_activity_non_profit">NonProfitActivity</string>
     <string name="title_activity_enroll">EnrollActivity</string>
     <string name="title_activity_sponsors">SponsorsActivity</string>
+    <string name="descriptionSponsorInfo">The Clymb offers you 50-75% off retail prices on the best outdoor gear, apparel, and adventures on the planet. Your membership is free. New deals are guaranteed daily.</string>
 </resources>

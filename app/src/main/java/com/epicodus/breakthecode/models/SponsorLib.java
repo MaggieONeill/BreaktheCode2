@@ -14,23 +14,27 @@ public class SponsorLib {
         setSponsors();
     }
 
+    public ArrayList<Sponsor> getSponsors(){
+        return mSponsors;
+    }
+
     private void setSponsors() {
         mSponsors = new ArrayList<>();
 
-        mSponsors.add(new Sponsor(
-                "The Clymb",
-                "The Clymb offers you 50-75% off retail prices on the best outdoor gear, apparel, and adventures on the planet. Your membership is free. New deals are guaranteed daily. ",
-                "http://www.theclymb.com/",
-                R.drawable.clymb
-
-        ));
-        mSponsors.add(new Sponsor(
-                "Columbia Ultimate",
-                "Today we offer an end-to-end line of collection software and services to help organizations automate, analyze, manage and handle accounts. Collection agencies, banks, healthcare, and retail organizations, along with state, county, and local governments nationwide all rely on Columbia Ultimate solutions to maximize collection performance, reduce costs, and collect more dollars.",
-                "https://www.columbiaultimate.com/",
-                R.drawable.columbia_ultimate
-
-        ));
+//        mSponsors.add(new Sponsor(
+//                "The Clymb",
+//                "The Clymb offers you 50-75% off retail prices on the best outdoor gear, apparel, and adventures on the planet. Your membership is free. New deals are guaranteed daily. ",
+//                "http://www.theclymb.com/",
+//                R.drawable.clymb
+//
+//        ));
+//        mSponsors.add(new Sponsor(
+//                "Columbia Ultimate",
+//                "Today we offer an end-to-end line of collection software and services to help organizations automate, analyze, manage and handle accounts. Collection agencies, banks, healthcare, and retail organizations, along with state, county, and local governments nationwide all rely on Columbia Ultimate solutions to maximize collection performance, reduce costs, and collect more dollars.",
+//                "https://www.columbiaultimate.com/",
+//                R.drawable.columbia_ultimate
+//
+//        ));
         mSponsors.add(new Sponsor(
                 "Crowd Compass",
                 "CrowdCompass is the world's largest developer of mobile event apps and conference apps.",
@@ -62,7 +66,7 @@ public class SponsorLib {
                 "Thetus",
                 "Our passion is to design, develop and deliver software to people who need to critically examine their complex challenges and risks. Beyond the software delivery, we take a truly partner-oriented approach by providing superior support services—at Thetus, we gauge our success by the success of our customers.",
                 "https://www.thetus.com",
-                R.drawable.ThetusLogo_small_copy
+                R.drawable.thetuslogo_small_copy
 
         ));
         mSponsors.add(new Sponsor(
@@ -87,5 +91,14 @@ public class SponsorLib {
                 R.drawable.uncorked_logo300
 
         ));
+    }
+
+    public Sponsor nextSponsor(Sponsor currentSponsor) {
+        int index = mSponsors.indexOf(currentSponsor);
+        if(index == mSponsors.size() - 1){
+            return mSponsors.get(0);
+        }else{
+            return mSponsors.get(index + 1);
+        }
     }
 }

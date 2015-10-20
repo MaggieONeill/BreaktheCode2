@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mSponsorButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, EnrollActivity.class);
+                Intent intent = new Intent(MainActivity.this, SponsorsActivity.class);
                 startActivity(intent);
             }
         });
